@@ -16,7 +16,7 @@ IMPORTANT:
   relational_plot.png, categorical_plot.png, statistical_plot.png
 """
 
-from corner import corner  # Included in the provided template (may be unused)
+from corner import corner 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -74,7 +74,7 @@ def plot_statistical_plot(df):
     Create a statistical plot (correlation heatmap) and save it as
     'statistical_plot.png'.
     """
-    # Select numeric columns for correlation
+    # Select numeric columns for correlation analysis
     numeric_cols = [
         "Survived",
         "Pclass",
@@ -160,7 +160,7 @@ def preprocessing(df):
     if "Embarked" in df.columns and df["Embarked"].isnull().any():
         df["Embarked"] = df["Embarked"].fillna(df["Embarked"].mode(dropna=True)[0])
 
-    # Encode Sex to numeric
+    # Encode Sex to numeric values
     if "Sex" in df.columns:
         df["Sex_num"] = df["Sex"].map({"male": 0, "female": 1})
 
