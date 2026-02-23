@@ -169,7 +169,7 @@ def preprocessing(df):
         embarked_dummies = pd.get_dummies(df["Embarked"], prefix="Embarked", drop_first=False)
         df = pd.concat([df, embarked_dummies], axis=1)
 
-    # Correlation preview (quick feature)
+    # Correlation preview 
     numeric_preview = [
         "Survived",
         "Pclass",
