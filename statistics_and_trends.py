@@ -10,7 +10,6 @@ IMPORTANT:
 - The template expects to read from 'data.csv' and save plots as PNG files:
   relational_plot.png, categorical_plot.png, statistical_plot.png
 """
-import sys 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
