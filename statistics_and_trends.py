@@ -1,7 +1,6 @@
 import sys
 
 if 'google.colab' in sys.modules:
-    !pip install corner
 
 """
 This is the template file for the statistics and trends assignment.
@@ -15,8 +14,7 @@ IMPORTANT:
 - The template expects to read from 'data.csv' and save plots as PNG files:
   relational_plot.png, categorical_plot.png, statistical_plot.png
 """
-
-from corner import corner 
+ 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
