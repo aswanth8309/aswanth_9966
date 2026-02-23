@@ -212,7 +212,7 @@ def writing(moments, col):
     else:
         skew_text = "not skewed"
 
-    # Kurtosis interpretation (excess kurtosis)
+    # Kurtosis interpretation
     if excess_kurtosis > 1:
         kurt_text = "leptokurtic"
     elif excess_kurtosis < -1:
